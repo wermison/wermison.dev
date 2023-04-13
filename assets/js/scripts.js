@@ -1,8 +1,7 @@
-let lado1 = document.querySelector('.lado1');
-let lado2 = document.querySelector('.lado2');
-let lado3 = document.querySelector('.altura');
-
-document.querySelector('#calcular button').addEventListener('click', () => {
+function calc3Lados() {
+    let lado1 = document.querySelector('.lado1');
+    let lado2 = document.querySelector('.lado2');
+    let lado3 = document.querySelector('.altura');
     let comprimento = (Number(lado1.value) + Number(lado2.value)) / 2;
     let altura = Number(lado3.value);
     let area = comprimento * altura;
@@ -16,5 +15,7 @@ document.querySelector('#calcular button').addEventListener('click', () => {
         document.querySelector('.result').innerHTML += `<p class="alert alert-success text-center">O imóvel tem <b>${area.toLocaleString()}</b>m<sup>2</sup> ou <b>${ha.toLocaleString()}</b>ha</p>`;
     }
 
-
-});
+    lado1.value = '';
+    lado2.value = '';
+    lado3.value = '';
+};

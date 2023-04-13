@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wermison.dev</title>
+    <meta name="description"
+        content="Desenvoldor WEB - Faça um orçamento para criação de seu site" />
+    <link rel=canonical href=https://wermison.dev/ />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="/assets/images/icon.png">
@@ -60,7 +63,7 @@
             <section class="col-lg border py-5 mb-4 rounded-2">
                 
             </section>
-            <aside class="col-lg-3 border ms-2 rounded-2 mb-2 pb-2">
+            <aside class="col-lg-3 border ms-2 rounded-2 mb-4 pb-2">
                 <div class="text-center">
                     <h6>Publicidade:</h6>
                 </div>
@@ -75,11 +78,35 @@
                 <div class="text-center">
                     <h6>Ferramentas:</h6>
                 </div>
-                <div class="list-group text-center">
-                    <a class="list-group-item"
-                        href="/pages/calcular-area-de-terrenos-irregulares-3-lados-diferentes.html">Calcular área de
-                        imóvel irregular <br> (três lados diferentes)</a>
-                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Calcular área de imóvel</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="/pages/calcular-area-de-terrenos-irregulares-3-lados-diferentes.html">Calcular
+                                    área de imóvel 3 Lados diferentes</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
             </aside>
         </div>
     </main>
@@ -94,7 +121,6 @@
 
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
