@@ -56,12 +56,14 @@ function sortearTimes() {
     const playerNames = document.getElementById('player-names').value.split('\n').map(name => name.trim()).filter(name => name !== '');
 
     if (!numPlayers || numPlayers <= 0 || playerNames.length === 0) {
-        alert('Por favor, preencha todos os campos!');
+        document.querySelector('#resultado').innerHTML = ``;
+        document.querySelector('#resultado').innerHTML = `<p class="alert alert-danger text-center">Por favor, preencha todos os campos!</p>`;
         return;
     }
 
     if (numPlayers > playerNames.length) {
-        alert("Número de jogadores por time não pode ser maior que o número total de jogadores.");
+        document.querySelector('#resultado').innerHTML = ``;
+        document.querySelector('#resultado').innerHTML = `<p class="alert alert-danger text-center">Número de jogadores por time não pode ser maior que o número total de jogadores.</p>`;
         return;
     }
 
