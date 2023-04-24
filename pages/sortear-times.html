@@ -66,15 +66,19 @@
                                 <h1>Sortear times</h1>
                                 <label for="num-players" class="h5">Quantidade de jogadores por equipe:</label>
                                 <input type="number" id="num-players" name="num-players"
-                                    placeholder="Digite a quantedade de jogadores por equipe" class="form-control form-control-sm">
+                                    placeholder="Digite a quantedade de jogadores por equipe"
+                                    class="form-control form-control-sm">
 
                                 <label for="player-names" class="h5">Nomes dos jogadores:</label>
                                 <textarea id="player-names" name="player-names" rows="10"
-                                    placeholder="Digite o nome por linha" class="form-control form-control-sm"></textarea>
+                                    placeholder="Digite o nome por linha"
+                                    class="form-control form-control-sm"></textarea>
 
                                 <button id="sortear" class="btn btn-dark">Sortear times</button>
 
-                                <div id="resultado"> <p class="alert alert-light">Os times sorteados aparecerão aqui</p></div>
+                                <div id="resultado">
+                                    <p class="alert alert-light">Os times sorteados aparecerão aqui</p>
+                                </div>
                                 <hr>
                                 <h6>Como o <strong>sortear times</strong> funciona?</h6>
 
@@ -84,10 +88,20 @@
                                 <p> Quando você digita o nome dos jogadores e quantidade de jogadores que cada time
                                     terá,
                                     basta clicar em "Sortear Times", logo em seguida será exibida a lista com as equipes
-                                    dividas aletoriamente de acordo com os dados informados.</p>
+                                    dividas aletoriamente de acordo com os dados informados.
+                                </p>
+                                <hr>
+                                <p class="h5">Deixe um comentário:</p>
+
+                                <div class="fb-comments text-center" data-href="https://wermison.dev/pages/sortear-times.html"
+                                    data-width="" data-numposts="5">
+                                </div>
                             </div>
 
+
+
                         </div>
+
 
                     </div>
                     <!-- <div class="row">
@@ -125,8 +139,7 @@
                             <li><a class="dropdown-item"
                                     href="/pages/calcular-area-de-terrenos-irregulares-4-lados-diferentes.html">Calcular
                                     área de imóvel 4 Lados diferentes</a></li>
-                            <li><a class="dropdown-item"
-                                    href="/pages/sortear-times.html">Sortear times</a></li>
+                            <li><a class="dropdown-item" href="/pages/sortear-times.html">Sortear times</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -159,6 +172,9 @@
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v16.0"
+        nonce="lllTeyJk"></script>
 </body>
 
 </html>
