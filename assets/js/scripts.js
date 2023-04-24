@@ -55,8 +55,13 @@ function sortearTimes() {
     const numPlayers = parseInt(document.getElementById('num-players').value);
     const playerNames = document.getElementById('player-names').value.split('\n').map(name => name.trim()).filter(name => name !== '');
 
-    if (numPlayers <= 0 || playerNames.length === 0) {
+    if (!numPlayers || numPlayers <= 0 || playerNames.length === 0) {
         alert('Por favor, preencha todos os campos!');
+        return;
+    }
+
+    if (numPlayers > playerNames.length) {
+        alert("Número de jogadores por time não pode ser maior que o número total de jogadores.");
         return;
     }
 
