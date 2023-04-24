@@ -27,7 +27,6 @@ input[type=number]::-webkit-outer-spin-button {
   .area-sorteio {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
     gap: 1rem;
     height: auto;
     background-color: #fff;
